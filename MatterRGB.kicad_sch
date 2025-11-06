@@ -8425,6 +8425,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(circle
+		(center 165.1 97.79)
+		(radius 4.836)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5c2227f3-773f-4890-a91b-ae733f881659)
+	)
+	(text "change to 3v3"
+		(exclude_from_sim no)
+		(at 165.862 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "41bab31c-a310-4cac-ace4-28f88f5fab23")
+	)
 	(junction
 		(at 60.96 64.77)
 		(diameter 0)
