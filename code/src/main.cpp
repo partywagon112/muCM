@@ -1,103 +1,130 @@
-#include <Arduino.h>
+// Copyright 2025 Espressif Systems (Shanghai) PTE LTD
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+/*
+ * This example is the smallest code that will create a Matter Device which can be
+ * commissioned and controlled from a Matter Environment APP.
+ * It controls a GPIO that could be attached to a LED for visualization.
+ * Additionally the ESP32 will send debug messages indicating the Matter activity.
+ * Turning DEBUG Level ON may be useful to following Matter Accessory and Controller messages.
+ */
+
+// Matter Manager
 #include <Matter.h>
-#include "drv8955.h"
 
-#define SERIAL_SPEED 9600
-#define FUSB302_ADDRESS = 0x23  // This is a constant, but in hope
-                                // I fix this, it can live here.
+#define CONFIG_ENABLE_CHIPOBLE 0
 
-#define FUSB302_nINT_PIN 11
-#define LED_PIN 15
-#define I2C_SDA_PIN 8
-#define I2C_SCL_PIN 9
-#define IN0_PIN 17
-#define PWM1_PIN 12
-#define PWM2_PIN 13
-#define PWM3_PIN 21
-#define PWM4_PIN 47
-#define EN1_PIN 39
-#define EN2_PIN 40
-#define EN3_PIN 41
-#define EN4_PIN 42
-#define nSLEEP_PIN 10
-#define nFAULT_PIN 2
-#define MODE_PIN 48
+#if !CONFIG_ENABLE_CHIPOBLE
+// if the device can be commissioned using BLE, WiFi is not used - save flash space
+#include <WiFi.h>
+#endif
 
-Driver_4CH Driver(
-  EN1_PIN,
-  PWM1_PIN,  
-  EN2_PIN,
-  PWM2_PIN,  
-  EN4_PIN,
-  PWM4_PIN,  
-  EN3_PIN,
-  PWM3_PIN,  
-  nSLEEP_PIN,
-  nFAULT_PIN
-);
+#define LED_BUILTIN 15
 
-void setup() {
-  pinMode(LED_PIN, OUTPUT);
+// List of Matter Endpoints for this Node
+// Single On/Off Light Endpoint - at least one per node
+MatterOnOffLight OnOffLight;
 
-  // Leave it off for now.
-  Driver.sleep(false);
+// CONFIG_ENABLE_CHIPOBLE is enabled when BLE is used to commission the Matter Network
+#if !CONFIG_ENABLE_CHIPOBLE
+// WiFi is manually set and started
+const char *ssid = "Fred";          // Change this to your WiFi SSID
+const char *password = "thomasoco!";  // Change this to your WiFi password
+#endif
 
-  Serial.begin(SERIAL_SPEED);
+// Light GPIO that can be controlled by Matter APP
+#ifdef LED_BUILTIN
+const uint8_t ledPin = LED_BUILTIN;
+#else
+const uint8_t ledPin = 2;  // Set your pin here if your board has not defined LED_BUILTIN
+#endif
 
-  Serial.printf("Booted\r\n");
+// set your board USER BUTTON pin here - decommissioning button
+const uint8_t buttonPin = BOOT_PIN;  // Set your pin here. Using BOOT Button.
 
+// Button control - decommision the Matter Node
+uint32_t button_time_stamp = 0;                // debouncing control
+bool button_state = false;                     // false = released | true = pressed
+const uint32_t decommissioningTimeout = 5000;  // keep the button pressed for 5s, or longer, to decommission
+
+// Matter Protocol Endpoint (On/OFF Light) Callback
+bool onOffLightCallback(bool state) {
+  digitalWrite(ledPin, state ? HIGH : LOW);
+  // This callback must return the success state to Matter core
+  return true;
 }
 
-typedef enum {
-  CHANNEL_A,
-  CHANNEL_B,
-  CHANNEL_C,
-  CHANNEL_D,
-  CHANNEL_LENGTH
-} channels_t;
+void setup() {
+  Serial.begin(115200);
+
+  // Initialize the USER BUTTON (Boot button) that will be used to decommission the Matter Node
+  pinMode(buttonPin, INPUT_PULLUP);
+  // Initialize the LED GPIO
+  pinMode(ledPin, OUTPUT);
+
+// CONFIG_ENABLE_CHIPOBLE is enabled when BLE is used to commission the Matter Network
+#if !CONFIG_ENABLE_CHIPOBLE
+  // Manually connect to WiFi
+  WiFi.begin(ssid, password);
+  // Wait for connection
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  while (WiFi.status() != WL_CONNECTED) {
+    Serial.print('.');
+    delay(500);
+  }
+  Serial.println();
+#endif
+
+  // Initialize at least one Matter EndPoint
+  OnOffLight.begin();
+
+  // Associate a callback to the Matter Controller
+  OnOffLight.onChange(onOffLightCallback);
+
+  // Matter beginning - Last step, after all EndPoints are initialized
+  Matter.begin();
+
+  if (!Matter.isDeviceCommissioned()) {
+    Serial.println("Matter Node is not commissioned yet.");
+    Serial.println("Initiate the device discovery in your Matter environment.");
+    Serial.println("Commission it to your Matter hub with the manual pairing code or QR code");
+    Serial.printf("Manual pairing code: %s\r\n", Matter.getManualPairingCode().c_str());
+    Serial.printf("QR code URL: %s\r\n", Matter.getOnboardingQRCodeUrl().c_str());
+  }
+}
 
 void loop() {
-  while (true){
-    Serial.printf("nFault = %d\r\n", digitalRead(nFAULT_PIN));
-
-    Driver.set_ch_c_on();
-    delay(1000);
-    Driver.set_ch_c_off();
-    delay(1000);
-
-    for (channels_t i = CHANNEL_A; i < CHANNEL_LENGTH; i = channels_t((int)i + 1)){
-      switch(i){
-        case CHANNEL_A:
-          printf("STATE A\r\n");
-          Driver.set_ch_a_on();
-          Driver.set_ch_b_off();
-          Driver.set_ch_c_off();
-          Driver.set_ch_d_off();
-          break;
-        case CHANNEL_B:
-          printf("STATE B\r\n");
-          Driver.set_ch_a_off();
-          Driver.set_ch_b_on();
-          Driver.set_ch_c_off();
-          Driver.set_ch_d_off();
-          break;
-        case CHANNEL_C:
-          printf("STATE C\r\n");
-          Driver.set_ch_a_off();
-          Driver.set_ch_b_off();
-          Driver.set_ch_c_on();
-          Driver.set_ch_d_off();
-          break;
-        case CHANNEL_D:
-          printf("STATE D\r\n");
-          Driver.set_ch_a_off();
-          Driver.set_ch_b_off();
-          Driver.set_ch_c_off();
-          Driver.set_ch_d_on();
-          break;
-      }
-      delay(1000);
-    }
-
+  // Check if the button has been pressed
+  if (digitalRead(buttonPin) == LOW && !button_state) {
+    // deals with button debouncing
+    button_time_stamp = millis();  // record the time while the button is pressed.
+    button_state = true;           // pressed.
   }
+
+  if (digitalRead(buttonPin) == HIGH && button_state) {
+    button_state = false;  // released
+  }
+
+  // Onboard User Button is kept pressed for longer than 5 seconds in order to decommission matter node
+  uint32_t time_diff = millis() - button_time_stamp;
+  if (button_state && time_diff > decommissioningTimeout) {
+    Serial.println("Decommissioning the Light Matter Accessory. It shall be commissioned again.");
+    Matter.decommission();
+    button_time_stamp = millis();  // avoid running decommissining again, reboot takes a second or so
+  }
+  Serial.printf("Manual pairing code: %s\r\n", Matter.getManualPairingCode().c_str());
+  delay(500);
 }
