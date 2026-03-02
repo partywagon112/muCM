@@ -1,0 +1,23 @@
+* Qucs 25.2.0  /home/partywagon112/Documents/GitHub/MatterRGB/docs/input_sim.sch
+.INCLUDE "/app/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+r_series v_adc _net0  1K tc1=0.0 tc2=0.0 
+V1 v_pup 0 DC 40
+r_pup v_out v_pup  10K tc1=0.0 tc2=0.0 
+r_1 _net0 v_out  50K tc1=0.0 tc2=0.0 
+c_esd 0 v_out  100N 
+c_filer 0 v_adc  10N 
+r_2 0 _net0  30K tc1=0.0 tc2=0.0 
+V2 _net1 0 DC 3.3
+D1 _net1 v_adc DMOD_D1 AREA=1.0
+.MODEL DMOD_D1 D (Is=1E-15 N=1 Cj0=10F M=0.5 Vj=0.7 Fc=0.5 Rs=0.0 Tt=0.0P Kf=0.0 Af=1.0 Bv=10 Ibv=1M Xti=3.0 Eg=1.11 Tcv=0.0 Trs=0.0 Ttt1=0.0 Ttt2=0.0 Tm1=0.0 Tm2=0.0 Tnom=26.85 )
+
+.control
+
+tran 5.02513e-06 0.001 0 
+write spice4qucs.tr1.plot v(v_adc) v(v_out) v(v_pup)
+destroy all
+reset
+
+exit
+.endc
+.END
