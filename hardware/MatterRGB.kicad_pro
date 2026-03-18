@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -88,7 +88,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -188,8 +188,10 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
         0.2,
-        0.5
+        0.5,
+        6.16
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -221,6 +223,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -490,6 +500,45 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.25,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "20V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.45,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "40V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.2,
+        "name": "ANT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.200564
+      },
+      {
+        "clearance": 0.25,
+        "name": "OUTPUT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2461,
@@ -497,7 +546,7 @@
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2461,
         "via_diameter": 0.6,
@@ -513,6 +562,22 @@
       {
         "netclass": "USB",
         "pattern": ".*D[+-]|.*D[NP].*"
+      },
+      {
+        "netclass": "20V",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "40V",
+        "pattern": ".*VDC.*"
+      },
+      {
+        "netclass": "ANT",
+        "pattern": ".*ANT.*"
+      },
+      {
+        "netclass": "OUTPUT",
+        "pattern": ".*OUT."
       }
     ]
   },
@@ -651,6 +716,10 @@
     [
       "ff0528eb-b947-44cb-a3c6-8918136d388a",
       "inputs"
+    ],
+    [
+      "fc672877-04b3-4ff6-a5d5-1a9c2b1c2345",
+      "MCU"
     ]
   ],
   "text_variables": {}

@@ -1,0 +1,21 @@
+(version 1)
+
+(rule "outer_clearance"
+    (constraint clearance (min 0.5mm))
+    (condition "(A.NetName == 'VDC' || A.NetName == '/VDC_F' || A.NetName == '/VDC_IN') && (A.Layer == 'F.Cu' || A.Layer == 'B.Cu') && (A.Type == 'Track' || A.Type == 'PadSmd' || A.Type == 'PadThru')")
+)
+
+(rule "inner_clearance"
+    (constraint clearance (min 0.25mm))
+    (condition "(A.NetName == 'VDC' || A.NetName == '/VDC_F' || A.NetName == '/VDC_IN') && (A.Layer != 'F.Cu' && A.Layer != 'B.Cu') && (A.Type == 'Track' || A.Type == 'PadSmd' || A.Type == 'PadThru')")
+)
+
+
+#(rule "VDC_to_GND_clearance"
+#    (constraint clearance (min 0.5mm))
+#    (condition "A.NetName == 'VDC' && B.NetName == 'GND'")
+#)
+#(rule "VDC_to_GND_clearance"
+#    (constraint clearance (min 0.5mm))
+#    (condition "(A.NetName == 'VDC' && B.NetName == 'GND') || (A.NetName == 'GND' && B.NetName == 'VDC')")
+#)
