@@ -2970,7 +2970,7 @@
 			(uuid "d3a847f9-d308-4a85-826d-f688715ee601")
 		)
 		(instances
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "R12")
 					(unit 1)
@@ -3161,7 +3161,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "U4")
 					(unit 2)
@@ -3246,7 +3246,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "R6")
 					(unit 1)
@@ -3425,7 +3425,7 @@
 			(uuid "1bf30e6a-4440-4c0e-953b-d31b764eef00")
 		)
 		(instances
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "R5")
 					(unit 1)
@@ -3510,7 +3510,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "R13")
 					(unit 1)
@@ -3584,7 +3584,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "#PWR0109")
 					(unit 1)
@@ -3657,7 +3657,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "#PWR0103")
 					(unit 1)
@@ -3826,7 +3826,7 @@
 			(uuid "96769472-5a92-463a-9c92-42ea4a7cc15b")
 		)
 		(instances
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "C8")
 					(unit 1)
@@ -4018,7 +4018,7 @@
 					(unit 2)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "U4")
 					(unit 1)
@@ -4147,7 +4147,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "C22")
 					(unit 1)
@@ -4220,7 +4220,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "#PWR0108")
 					(unit 1)
@@ -4293,7 +4293,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "#PWR0110")
 					(unit 1)
@@ -4359,7 +4359,7 @@
 			(uuid "46c8f88a-c925-4aa9-9e24-74a90c19540e")
 		)
 		(instances
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "#PWR01")
 					(unit 1)
@@ -4552,7 +4552,7 @@
 					(unit 3)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "U4")
 					(unit 3)
@@ -4625,7 +4625,7 @@
 					(unit 1)
 				)
 			)
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "#PWR0104")
 					(unit 1)
@@ -4794,7 +4794,7 @@
 			(uuid "880c0acf-e068-4b6c-ab4e-384410fd024a")
 		)
 		(instances
-			(project "MatterRGB"
+			(project "muCM"
 				(path "/5aeb2534-3f4b-400d-8d88-1c07833a2381/ff0528eb-b947-44cb-a3c6-8918136d388a"
 					(reference "C18")
 					(unit 1)

@@ -1,4 +1,4 @@
-* Qucs 25.2.0  /home/partywagon112/Documents/GitHub/MatterRGB/docs/input_sim.sch
+* Qucs 25.2.0  /home/partywagon112/Documents/GitHub/muCM/docs/input_sim.sch
 .INCLUDE "/app/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
 r_series v_adc _net0  1K tc1=0.0 tc2=0.0 
 V1 v_pup 0 DC 40

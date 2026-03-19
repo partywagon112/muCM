@@ -692,7 +692,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/453f2025-9f90-42c6-9c37-a865beaa1765")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 -0.51)
@@ -964,7 +964,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/158d9e0f-9dac-4bfc-bf17-d67ed8ce43f0")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -1561,7 +1561,7 @@
 		(property ki_fp_filters "Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm")
 		(path "/7856ddda-aa55-4086-8077-e2a3596fca7f")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.61 1.61)
@@ -2093,7 +2093,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/2aabb2e7-8d92-44bf-9e01-e35375b1a6d4")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -2365,7 +2365,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/597bd159-0aba-4472-b598-44baaafad10f")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -2857,7 +2857,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/0f6040c4-0126-4d0b-b46c-64f08779cabf")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -3077,7 +3077,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/1e144f92-9465-4427-8dc7-622f89974870")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -3554,7 +3554,7 @@
 		(property ki_fp_filters "PCM_PartyWagon112_Connector_M8:CUI_CDM806-04A-MP-F011-67")
 		(path "/cdf28e89-b399-40a8-ac53-615e339f142f")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr through_hole)
 		(fp_circle
 			(center -7.401 0.5)
@@ -3918,7 +3918,7 @@
 		(property ki_fp_filters "Inductor_SMD:L_1008_2520Metric")
 		(path "/a2ac497d-52ee-459b-b99d-32bd6f840007")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 1.11)
@@ -4981,7 +4981,7 @@
 		(property ki_fp_filters "WQFN*1EP*2.5x2.5mm*P0.5mm*")
 		(path "/a0742637-6901-40ed-8360-fa4cd3d77cec")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.36 -1.36)
@@ -5676,7 +5676,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/f2880148-8ba8-47ff-98e5-3fc97589c828")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -5948,7 +5948,7 @@
 		(property ki_fp_filters "Package_TO_SOT_SMD:SOT-23-6")
 		(path "/bbc498bf-cb7b-4777-af8e-83e22b2ee5b8")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.91 -1.56)
@@ -6657,7 +6657,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/1f13cef6-551e-4d29-818c-0f772135bb9c")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -6914,7 +6914,7 @@
 		(property ki_fp_filters "PCM_PartyWagon112_Connector_M8:CUI_CDM805-08A-FP-F011-67")
 		(path "/0d052aeb-99de-444b-9609-29fd8c6475f1")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0 -7.50555)
@@ -7665,7 +7665,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/a7c8817a-667c-4a0f-80c4-d01b3801e720")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -7937,7 +7937,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/f9420367-9977-459c-8314-a6011cfc4c5a")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -8209,7 +8209,7 @@
 		(property ki_fp_filters "VQFN*1EP?4x4mm*")
 		(path "/4cd3b025-d8d3-4bda-bf44-303305f1b3bd")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.11 2.11)
@@ -8987,7 +8987,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/9cd6995a-9f32-4380-878b-75c2b2b5bdb4")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -9770,7 +9770,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6a99ba06-7848-4af5-9dab-05a1c548c160")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -9990,7 +9990,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/b7d00b6b-45da-4a29-b93c-96bed48e86f1")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -10275,7 +10275,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/c8c0edc3-73f8-42be-8d7c-77bb7d7700d7")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 -0.51)
@@ -10767,7 +10767,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/642e6f42-1700-4f7c-9f20-7b33b51b3852")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 -0.51)
@@ -11052,7 +11052,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/d818136a-d10d-409b-a528-99c1e57a2a0c")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -11337,7 +11337,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/e40e72fc-a54f-4132-b0a7-7835c37a8342")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -12448,7 +12448,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/ca9c798a-c8c6-47b2-9c6f-f2cc873f6887")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.237258 0.5225)
@@ -12692,7 +12692,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/494c8b59-5548-4ec8-bdd9-ab6477fbdd88")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.485 -0.735)
@@ -13032,7 +13032,7 @@
 		(property ki_fp_filters "Package_DFN_QFN:Diodes_DFN1006-3")
 		(path "/70ef99ca-7f5a-4da6-9921-a1497f343187")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.5 -0.61)
@@ -13422,7 +13422,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/5314e462-3f40-48e2-aa43-33801cadfa2e")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 -0.51)
@@ -13699,7 +13699,7 @@
 		(property ki_fp_filters "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal")
 		(path "/e079f3f2-d1dd-4d09-8a68-a45b801198fd")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(zone_connect 2)
 		(attr smd)
 		(fp_line
@@ -14228,7 +14228,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/e28183f0-0f31-4da3-9c2f-4c8ea9793df0")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -14529,7 +14529,7 @@
 		(property ki_fp_filters "Fuse:Fuse_0805_2012Metric")
 		(path "/60f8423f-e40d-480d-b493-b5f629c23f09")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.258578 -0.71)
@@ -14816,7 +14816,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/8c70095e-5a43-436a-a7b9-5d619c439091")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -16029,7 +16029,7 @@
 		(property ki_fp_filters "Resistor_SMD:R_0402_1005Metric")
 		(path "/ddfd50da-3f74-4e99-9c41-68901065d85f")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -16330,7 +16330,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/66a47f08-5221-4f0f-86cf-1c19e74c502a")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -17221,7 +17221,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/439a7424-5d39-4ead-8be3-17e9cf6b3196")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -18140,7 +18140,7 @@
 		(property ki_fp_filters "Resistor_SMD:R_0402_1005Metric")
 		(path "/905ae8ba-0e5c-4da5-82ab-44c8e8522ee0")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -18457,7 +18457,7 @@
 		(property ki_fp_filters "Diode_SMD:D_SOD-882")
 		(path "/418584aa-95d5-4987-a379-55f87330e9e0")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.81 -0.61)
@@ -18906,7 +18906,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/fa02f22b-f375-47b8-91f9-1b8782d63960")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -19193,7 +19193,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/35cd7822-d146-42eb-a515-e46960a650ee")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -20114,7 +20114,7 @@
 		(property ki_fp_filters "PCM_PartyWagon112_DFN:DFN1006-3")
 		(path "/3e190c42-95cf-4b81-8241-7a395feb7176")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.5 -0.61)
@@ -20749,7 +20749,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/fb93baad-c555-42a2-accd-0a4c165c00ca")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.26 -0.95)
@@ -21565,7 +21565,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c8c1979e-cac0-4b8e-aef5-12638c9d4eda")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -21852,7 +21852,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/f6162876-f86e-4341-aece-c6db5d259b81")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -22856,7 +22856,7 @@
 		(property ki_fp_filters "Diode_SMD:D_SOD-882")
 		(path "/e2789830-d854-471e-8e04-7607f0ec56b1")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.81 0.61)
@@ -23293,7 +23293,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/45e48497-4182-4536-a341-ba68d2c2e610")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.26 -0.95)
@@ -24139,7 +24139,7 @@
 		(property ki_fp_filters "Diode_SMD:Nexperia_CFP3_SOD-123W")
 		(path "/306fbfc0-6df3-44ca-b286-75d8b27d700a")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.26 -0.95)
@@ -24554,7 +24554,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/7fe6f89d-76d8-4012-bad0-3206e2dae9ca")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -24841,7 +24841,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/fee8c0a1-2491-4e95-a893-877b3b06b467")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -25142,7 +25142,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/0a41c73e-fa80-48f3-afe3-04f6b8673f8f")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -25373,7 +25373,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c535f0ec-9769-4e81-be79-2e524c13f2a7")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -25891,7 +25891,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/d3cebde9-db18-4476-b7a4-7301b91d26ee")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -26465,7 +26465,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/0ad44325-2f35-4189-90b1-05f0c1a68e7e")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -28270,7 +28270,7 @@
 		(property ki_fp_filters "Capacitor_SMD:C_0603_1608Metric")
 		(path "/6ecacdd6-2889-41a3-8305-5fb175e0527a")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 -0.51)
@@ -28557,7 +28557,7 @@
 		(property ki_fp_filters "Package_TO_SOT_SMD:SOT-23-5")
 		(path "/4df1f659-19f1-4372-a263-8ab7314def1b")
 		(sheetname "/")
-		(sheetfile "MatterRGB.kicad_sch")
+		(sheetfile "muCM.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.91 -1.56)
@@ -29225,16 +29225,6 @@
 				(xyz 0 0 0)
 			)
 		)
-	)
-	(gr_line
-		(start 119.6 74.3525)
-		(end 119.6 64.85)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "Dwgs.User")
-		(uuid "07679f48-b7d5-47e0-9460-66e00c6090a3")
 	)
 	(gr_line
 		(start 109 77.8)
