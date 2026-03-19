@@ -1,1 +1,0 @@
-Developed using (this)[https://medium.com/@vinsce/create-an-esphome-external-component-part-1-introduction-config-validation-and-code-generation-e0389e674bd6]
