@@ -1,0 +1,30 @@
+external_components:
+  - source:
+      type: git
+      url: https://github.com/rbaron/esphome
+      ref: fusb302
+    components: [fusb302]
+
+i2c:
+  - id: i2c_bus_fusb302
+    sda: GPIO8
+    scl: GPIO9
+    # frequency: 100kHz
+
+fusb302:
+  id: fusb302_id
+  i2c_id: i2c_bus_fusb302
+  address: 0x23
+  interrupt_pin: GPIO11
+  voltage: 9000 mV
+  current: 1000 mA
+  start_power_negotiation_on_boot: false
+  on_pd_negotiation_success:
+    - lambda: |-
+        ESP_LOGW("fusb302_trigger", "PD negotiation success outcome: %d", success);
+  on_pd_negotiation_failure:
+    then:
+      - lambda: |-
+          ESP_LOGW("fusb302_trigger", "PD negotiation failure outcome: %d", success);
+
+
